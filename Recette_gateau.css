@@ -1,0 +1,156 @@
+body {
+    background-color: #8BA1BB;
+    font-family: Arial;
+    margin: 0;
+}
+/* Alors ce qui permet d'identifier à quel élément on applique des styles, ce sont les sélecteurs
+id ou class et on les définit au niveau de l'élément ( ici au p).*/
+* {
+    overflow: auto;
+}
+
+p.categorie { /*p#catégorie pour dire le p avec id categorie. Si #catégorie--> tous éléments avec catégorie comme id.
+    Ceci est lorsque le sélecteur utilisé est id. Si class le # est remplacé par le .(point) Il est aussi possible de mettre , h1 pour les inclure*/
+    background-color: black;
+    color: white;
+    display: inline-block;
+    margin-left: 0px;
+    margin-top: -15px;
+    margin-bottom: 0;
+    padding: 8px 18px 8px 18px; /*aussi 8px 18px uniquement*/
+    font-weight: bold;
+    font-size: 16px;
+}
+
+div.contenu {
+    background-color: white;
+    margin: 60px 10% 80px 10%;
+    padding: 0px 30px;
+    min-width: 350px; /*permet de limiter a un minimum l'affichage du contenu. Si on descend plus, on doit scroll*/
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1) ;
+    overflow: visible;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 12px;
+    margin-top: 10px;
+}
+
+p.description {
+    text-align: center; /*avec le max width, le texte ne se centre plus bien. Donc on créé une div pour le régler*/
+    max-width: 400px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.centre { /*j'ai enlevé div pour dire de prnedre tous les éléments avec class centre*/
+    text-align: center;
+    width: 100%;  /*Permet de prendre 100% de la largeur et pas plus. Centre l'image*/
+}
+
+div.categorie {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    overflow: visible;
+}
+
+div.separateur {
+    background-color: black;
+    margin: auto;
+    width: 100px;
+    height: 1px;
+}
+
+div.info {
+    position: relative;
+}
+
+table.info {
+    position:absolute; 
+    bottom: 0; 
+    width: 100%;
+    color: white;
+    background-color: #6C829DC0;
+    height: 80px
+}
+
+table.info td { /* le td apres table.info est pour désigner tous les td incluent dans table de class info*/
+    text-align: center;
+    font-size: 14px;
+    vertical-align: top
+}
+
+table.info th { 
+    font-size: 16px;
+    vertical-align: bottom;
+    padding-bottom: 8px
+}
+
+img.info {
+    display: block;
+    max-height: 500px;
+    object-fit: cover;
+    min-height: 200px;  /*Ceci est pour empêcher de superposer les données qd l'image n'est pas chargée*/
+    background-color: lightgrey;
+}
+
+div.colonne1 {
+    display: inline-block;
+    margin-right: 10px solid black;
+}
+
+div.colonne2 {
+    float: right;
+}
+
+div.colonne {  /*On peut réunir les propriétés communes en mettant par ex div.colonne1 colonne2{}*/
+    width: 45%;
+    margin-top: 20px;
+}
+
+.colonne h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 5px solid #6C829D;
+    padding-bottom: 5px;
+}
+
+div.ingredients p {
+    border: 1px solid #6C829D;
+    text-align: center;
+    font-size: 14px;
+    padding: 8px 0;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+table.preparation p.numero {
+    background-color: #6C829D;
+    width: 20px;
+    height: 25px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 4px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin: 0;
+}
+
+table.preparation td{
+    vertical-align: top;
+}
+
+table.preparation td.preparation_etape{
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+table.preparation tr {
+    height: 40px;
+}
+
+
